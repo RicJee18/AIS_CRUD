@@ -1,0 +1,29 @@
+<html>
+
+<head></head>
+
+<body>
+
+    <form method='get' action='create_save.php'>
+        Username<input type='text' name='thisUser'><br>
+        Password<input type='password' name='thisPass'><br>
+        Register<input type='submit' onclick="myfunction()">
+    </form>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="sweetalert2.all.min.js"></script>
+<!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+   <script src="//cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
+
+    <script>
+        function myfunction(){
+            Swal.fire(
+                'New Record Created Successfully',
+                'Hi',
+                'success'
+            )
+        }
+    </script>
+</body>
+
+</html>
